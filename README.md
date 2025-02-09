@@ -4,17 +4,12 @@ Finds and writes into every possible hard drive sector, marking it as used.
 Modified Assembly Code (x86, Linux)
 This updated code:
 
-Opens the disk (/dev/sda or any raw block device).
-Starts writing from the first available sector.
-Continues until the entire disk is full.
-Logs sector writes for tracking.
-
-How This Works
-Opens the disk (/dev/sda) in read/write mode.
-Finds and writes into every possible sector, marking it as used.
-Writes until the entire disk is full.
-Logs the written sectors to track progress.
-Closes and exits when the drive is completely used.
+-------------
+1.Opens the disk (/dev/sda) in read/write mode.
+2.Finds and writes into every possible sector, marking it as used.
+3.Writes until the entire disk is full.
+4.Logs the written sectors to track progress.
+5.Closes and exits when the drive is completely used.
 
 How to Compile & Run
 Compile:
